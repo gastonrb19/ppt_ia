@@ -1,0 +1,1428 @@
+Actúa como un especialista en generación de presentaciones ejecutivas corporativas. 
+Adjunto documentación.
+1. Un Power Point como modelo, el cual contiene el formato, diseño y estructura que debe utilizarse. 
+2. Debes tomar el EXCEL adjuntando anteriormente. El nombre del archivo es “Tickets(2).xlsx. 
+2.1 En la pestaña "Hoja1" viene la volumetría de los tickets de la reunión anterior.
+2.2 En la pestaña "Tickets" vienen los tickets de todos los módulos
+2.3 En la pestaña "Desarrollos" viene los proyectos de cada módulo 
+Debes generar DOS archivos PowerPoint (.pptx) completamente editables utilizando el mismo estilo visual, colores y estructura del PDF de referencia.
+PRESENTACIÓN 1 
+Título: "Seguimiento Semanal de la Torre Comercial y Técnico" 
+Módulos a incluir:
+- NET
+- SHAREPOINT
+- B&I
+- FICA
+- CRM
+- PM
+- PS
+
+Estructura
+
+Diapositiva 1
+Título: Seguimiento Semanal
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 40
+- Modelo de color: RGB
+- Rojo: 162
+- Verde: 173
+- Azul: 0
+- Hex: #A2AD00
+Subtítulo: Torre Comercial y Técnica
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 46+
+- Modelo de color: RGB
+- Rojo: 40
+- Verde: 73
+- Azul: 115
+- Hex: #284973
+Campos adicionales;
+- En la parte superior izquierda agregar el Logo de Metrogas.
+- En la parte inferior derecha agregar la fecha actual. El formato de fecha debe ser el largo.
+- Una imagen corporativa.
+
+Diapositiva 2
+Título: Agenda
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+Este debe estar ubicado en la parte superior izquierda.
+Debes incluir el siguiente punteo:
+1. Volumetría tickets Torre Comercial y Técnica
+2. Detalle tickets por Módulo
+3. Detalle Desarrollos por Módulo
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- Agregar una imagen corporativa
+
+Diapositiva 3
+Título: Volumetría Tickets
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel
+Debe incluir:
+- Una tabla con la totalidad de ticket por cada módulo
+Los módulos son;
+- Net - Metrogas
+- SHAREPOINT - Metrogas
+- B&I - Metrogas
+- Fica - Metrogas
+- Crm - Metrogas
+- Pm - Metrogas
+- Ps - Metrogas
+Los campos de la tabla son;
+1. Grupo Asignado
+2. Total Ticket por módulo
+Agregar un fila donde muestre la totalidad de los tickets.
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 4 
+Título = Tickets módulo Portales – NET
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Net - Metrogas".
+- No utilizar el nombre del módulo (NET) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Net - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 5
+Título: Desarrollos Módulo Portales – NET
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Portales y autoatencion".
+- No utilizar el nombre del módulo (NET) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "Portales y autoatencion"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status. 
+
+Diapositiva 6
+Título = Tickets módulo Sharepoint - SHP
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Sharepoint - Metrogas".
+- No utilizar el nombre del módulo (SHP) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Sharepoint - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 7
+Título: Desarrollos Módulo Sharepoint – SHP
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SHP".
+- No utilizar el nombre del módulo (SHP) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SHP"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 8
+Título = Tickets módulo Billing – B&I
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "B&I - Metrogas".
+- No utilizar el nombre del módulo (B&I) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "B&I - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 9
+Título: Desarrollos Módulo Billing – B&I
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP ISU".
+- No utilizar el nombre del módulo (B&I) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP ISU"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 10
+Título = Tickets módulo FICA
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Fica - Metrogas".
+- No utilizar el nombre del módulo (FICA) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Fica - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 11
+Título: Desarrollos Módulo FICA
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP FICA".
+- No utilizar el nombre del módulo (FICA) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP FICA"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 12
+Título = Tickets módulo CRM
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Crm - Metrogas".
+- No utilizar el nombre del módulo (CRM) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Crm - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 13
+Título: Desarrollos Módulo CRM
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP CRM".
+- No utilizar el nombre del módulo (CRM) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP CRM"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 14
+Título = Tickets módulo PM
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Pm - Metrogas".
+- No utilizar el nombre del módulo (PM) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Pm - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 15
+Título: Desarrollos Módulo PM
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP PM".
+- No utilizar el nombre del módulo (PM) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP PM"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 16
+Título = Tickets módulo PS
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Ps - Metrogas".
+- No utilizar el nombre del módulo (PS) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Ps - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 17
+Título: Desarrollos Módulo PS
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP PS".
+- No utilizar el nombre del módulo (PS) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP PS"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 18 
+Se debe agregar el logo de Metrogas con el fondo azul, como esta en la última diapositiva del Power Point modelo.
+ 
+
+PRESENTACIÓN 2 
+Título: "Seguimiento Semanal de la Torre Corporativa
+Módulos a incluir:
+- HCM
+- SSFF
+- R&P
+- SD
+- BW
+- FICO
+- MM
+
+Estructura
+Diapositiva 1
+Título: Seguimiento Semanal
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 40
+- Modelo de color: RGB
+- Rojo: 162
+- Verde: 173
+- Azul: 0
+- Hex: #A2AD00
+Subtítulo: Torre Corporativa
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 46+
+- Modelo de color: RGB
+- Rojo: 40
+- Verde: 73
+- Azul: 115
+- Hex: #284973
+Campos adicionales;
+- En la parte superior izquierda agregar el Logo de Metrogas.
+- En la parte inferior derecha agregar la fecha actual. El formato de fecha debe ser el largo.
+- Una imagen corporativa.
+
+Diapositiva 2
+Título: Agenda
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+Este debe estar ubicado en la parte superior izquierda.
+Debes incluir el siguiente punteo:
+1. Volumetría tickets Torre Corporativa
+2. Detalle tickets por Módulo
+3. Detalle Desarrollos por Módulo
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- Agregar una imagen corporativa
+
+Diapositiva 3 
+Título: Volumetría Tickets
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel
+Debe incluir:
+- Una tabla con la totalidad de ticket por cada módulo
+Los módulos son;
+- Hcm - Metrogas
+- SSFF
+- R&P - Metrogas
+- Sd - Metrogas
+- Bw-Hana - Metrogas
+- Fico - Metrogas
+- Mm - Metrogas
+Los campos de la tabla son;
+1. Grupo Asignado
+2. Total Ticket por módulo
+Agregar un fila donde muestre la totalidad de los tickets.
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 4
+Título = Tickets módulo Nomina – HCM
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Hcm - Metrogas".
+- No utilizar el nombre del módulo (Hcm) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Hcm - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 5
+Título: Desarrollos Módulo Nomina – HCM
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP HCM".
+- No utilizar el nombre del módulo (HCM) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP HCM"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 6
+Título = Tickets módulo AMUN – SSFF
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SSFF".
+- No utilizar el nombre del módulo (SSFF) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "SSFF"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 7
+Título: Desarrollos Módulo AMUN – SSFF
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SSFF".
+- No utilizar el nombre del módulo (SSFF) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SSFF"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 8
+Título = Tickets módulo Roles y Perfiles – R&P
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "R&P - Metrogas".
+- No utilizar el nombre del módulo (R&P) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "R&P - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 9
+Título: Desarrollos Módulo Roles y Perfiles – R&P
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP R&P".
+- No utilizar el nombre del módulo (R&P) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP R&P"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 10
+Título = Tickets módulo SD
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Sd - Metrogas".
+- No utilizar el nombre del módulo (SD) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Sd - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 11
+Título: Desarrollos Módulo SD
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP SD".
+- No utilizar el nombre del módulo (SD) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP SD"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 12
+Título = Tickets módulo BW - HANA
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Bw-Hana - Metrogas".
+- No utilizar el nombre del módulo (BW- HANA) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Bw-Hana - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 13
+Título: Desarrollos Módulo BW - HANA
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "BI".
+- No utilizar el nombre del módulo (BI) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "BI"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 14
+Título = Tickets módulo FICO
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Fico - Metrogas".
+- No utilizar el nombre del módulo (FICO) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Fico - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 15
+Título: Desarrollos Módulo FICO
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP FI".
+- No utilizar el nombre del módulo (FI) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP FI"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 16
+Título = Tickets módulo MM
+- Tipo de letra: FS EMERIC
+- Tamaño letra: 30
+- Modelo de color: RGB
+- Rojo: 103
+- Verde: 133
+- Azul: 193
+- Hex: #6785C1
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Tickets" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Grupo Asignado".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "Mm - Metrogas".
+- No utilizar el nombre del módulo (Mm) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Grupo Asignado = "Mm - Metrogas"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de tickets;
+1.Estado 
+2.Empresa
+3.Número
+4.Resumen
+5.Creado
+6.Abierto por
+Ordenar por: 
+- Estado
+- Fecha de creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+
+Diapositiva 17
+Título: Desarrollos Módulo MM
+El título debe estar ubicado en la parte superior al centro.
+Fuente de datos:
+- Pestaña "Desarrollos" del archivo Excel.
+Regla de filtrado obligatoria:
+- Utilizar la columna "Frente".
+- Aplicar filtro con coincidencia exacta.
+- Valor a filtrar: "SAP MM".
+- No utilizar el nombre del módulo (MM) para filtrar datos.
+- No utilizar búsquedas parciales.
+- No utilizar otras columnas.
+Todos los registros donde:
+- Frente = "SAP MM"
+deben ser incluidos en la tabla.
+Estos son los campos que debe tener la tabla de desarrollos;
+1.Status.
+2.Creado.
+3.Codigo
+4.Tipo de requerimiento.
+5.Titulo
+6.Fecha plan entrega QA
+7.Fecha entrega a QA
+8.Solicitante
+Ordenar por: 
+- Estado
+- Fecha creación descendente
+La cabecera de la tabla debe tener este color;
+- Modelo de Color: RGB
+- Rojo: 0
+- Verde: 32
+- Azul: 96
+- Hex: #002060
+- Tipo letra: APTOS NARROW
+- Tamaño letra: 11
+- Color de letra: Blanco
+- Formato letra: Negrita
+Campos adicionales;
+- En la parte superior derecho debes colocar el logo de NTTDATA
+- En la parte superior izquierda debes colocar el logo de METROGAS
+- Agregar cuadro resumen inferior con cantidad de desarrollos por Status.
+
+Diapositiva 18 
+Se debe agregar el logo de Metrogas con el fondo azul, como esta en la última diapositiva del Power Point modelo.
+
+Reglas:
+-Incluir el mismo color que tiene la PPT modelo. 
+-Incluir color en las tablas.
+-Imágenes coporativas
+-Colocar el Logo NTTDATA en la parte superior derecha de todas las diapositivas de la presentación. 
+-Colocar el logo de METROGAS en la parte superior izquierda de todas las diapositivas de la presentación.
+-Si una tabla no cabe en una sola diapositiva, crear diapositivas adicionales manteniendo el mismo formato.
+-Si un módulo no posee tickets, mostrar en la diapositiva la tabla solo con los campos de cabecera.
+-Si un módulo no posee desarrollos, mostrar en la diapositiva la tabla solo con los campos de cabecera. 
+-Generar los archivos PowerPoint editables.
+
+Entregables 
+Debes devolver:
+1.	Seguimiento Semanal Torre Comercial y Técnico.pptx
+2.	Seguimiento Semanal Torre Corporativa.pptx
+

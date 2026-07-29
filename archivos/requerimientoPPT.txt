@@ -1,0 +1,846 @@
+Segmentacion PPT:
+	Nomenclatura: 
+		"*" : "Interpretar"
+		"_" : "Nueva Slide"
+		"-" : "Dato"
+		"+" : "Crear"
+		":|:" : "Operador OR, puede utilizar las opciones listadas dentro de la identación"
+	Nombre ppt: "MTGS - Seguimiento Operativo Sistemas Corporativos_<fecha_hoy(DD-MM-YYYYY)>"
+		Slides:
+			_nombre: "Seguimiento semanal"
+				+ considerar: 
+					* Generar fecha actual:
+						- "valor fecha actual con formato 'DD-MM-YYYY'"
+			_nombre: "Agenda"
+				+ considerar: 
+					* Generar listado: 
+						- "Estado Torre Corporativa" 
+						- "Revisión de tickets por Módulo"
+						- "Revisión de Desarrollos por Módulo"
+			_nombre: "Resumen Torre Corporativa"
+				+ considerar : 
+					* Generar tabla : 
+						- con nombre cabecera "Volumetría Tickets"
+						- con nueva subcabecera "Reunión Anterior":
+							- Se debe introducir la cantidad de tickets anterior
+								- Solicitar al usuario ejecución promp
+								- Solicitar log IA generación PPT historico
+						- con nueva subcabecera "Reunión Actual":
+							- Se debe introducir la cantidad :|:
+								- Se genera al realizar cruce ppt Excel
+								- Solicitar al usuario ejecución promp
+						- con nueva subcabecera "Diferencia":
+							- Se debe utilizar la cantidad de tickets anterior - la cantidad de tickets actuales.
+							
+					* Generar tabla:
+						- con nombre cabecera "Volumetría Desarrollos Ingresados"
+							- con nueva subcabecera "Reunión Anterior":
+								- Se debe introducir la cantidad de tickets anterior
+									- Solicitar al usuario ejecución promp
+									- Solicitar log IA generación PPT historico
+							- con nueva subcabecera "Reunión Actual":
+								- Se debe introducir la cantidad :|:
+									- Se genera al realizar cruce ppt Excel
+									- Solicitar al usuario ejecución promp
+							- con nueva subcabecera "Diferencia":
+								- Se debe utilizar la cantidad de tickets anterior - la cantidad de tickets actuales.
+			_nombre: "Tickets HCM":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets HCM" - Fecha actual.
+			_nombre: "Desarrollos HCM":
+				+ considerar:
+					* Generar tabla "Desarrollos HCM":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos HCM":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos HCM" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos HCM" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos HCM" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos HCM"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets SSFF":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets SSFF" - Fecha actual.
+			_nombre: "Desarrollos SSFF":
+				+ considerar:
+					* Generar tabla "Desarrollos SSFF":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos SSFF":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos SSFF" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos SSFF" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos SSFF" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos SSFF"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets R&P":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets R&P" - Fecha actual.
+			_nombre: "Desarrollos R&P":
+				+ considerar:
+					* Generar tabla "Desarrollos R&P":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos R&P":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos R&P" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos R&P" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos R&P" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos R&P"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets SD":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets SD" - Fecha actual.
+			_nombre: "Desarrollos SD":
+				+ considerar:
+					* Generar tabla "Desarrollos SD":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos SD":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos SD" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos SD" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos SD" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos SD"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets FI":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets FI" - Fecha actual.
+			_nombre: "Desarrollos FI":
+				+ considerar:
+					* Generar tabla "Desarrollos FI":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos FI":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos FI" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos FI" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos FI" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos FI"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets BI":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets BI" - Fecha actual.
+			_nombre: "Desarrollos BI":
+				+ considerar:
+					* Generar tabla "Desarrollos BI":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos BI":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos BI" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos BI" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos BI" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos BI"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets MM":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets MM" - Fecha actual.
+			_nombre: "Desarrollos MM":
+				+ considerar:
+					* Generar tabla "Desarrollos MM":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos MM":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos MM" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos MM" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos MM" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos MM"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "metrogas logo"
+
+Segmentacion PPT (Torre Comercial y Técnica):
+	Nomenclatura: 
+		* Utilizar la misma nomenclatura definida en el bloque anterior ("Segmentacion PPT")
+	Nombre ppt: "Presentación de Comité Operativo_<fecha_hoy(DD-MM-YYYY)>"
+		Slides:
+			_nombre: "Seguimiento Semanal"
+				+ considerar: 
+					* Generar fecha actual:
+						- "valor fecha actual con formato 'DD-MM-YYYY'"
+			_nombre: "Agenda"
+				+ considerar: 
+					* Generar listado: 
+						- "Estado Torre Comercial y Técnica"
+						- "Revisión de tickets por Módulo"
+						- "Revisión de Desarrollos por Módulo"
+			_nombre: "Resumen Torre Comercial y Técnica"
+				+ considerar : 
+					* Generar tabla : 
+						- con nombre cabecera "Volumetría Tickets"
+						- con nueva subcabecera "Reunión Anterior":
+							- Se debe introducir la cantidad anterior
+								- Solicitar al usuario ejecución promp
+								- Solicitar log IA generación PPT historico
+						- con nueva subcabecera "Reunión Actual":
+							- Se debe introducir la cantidad :|:
+								- Se genera al realizar cruce ppt Excel
+								- Solicitar al usuario ejecución promp
+						- con nueva subcabecera "Diferencia":
+							- Se debe utilizar la cantidad anterior - la cantidad actual.
+					* Generar tabla : 
+						- con nombre cabecera "Volumetría Desarrollos Ingresados"
+						- con nueva subcabecera "Reunión Anterior":
+							- Se debe introducir la cantidad anterior
+								- Solicitar al usuario ejecución promp
+								- Solicitar log IA generación PPT historico
+						- con nueva subcabecera "Reunión Actual":
+							- Se debe introducir la cantidad :|:
+								- Se genera al realizar cruce ppt Excel
+								- Solicitar al usuario ejecución promp
+						- con nueva subcabecera "Diferencia":
+							- Se debe utilizar la cantidad anterior - la cantidad actual.
+			_nombre: "Tickets NET":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets NET" - Fecha actual.
+			_nombre: "Desarrollos NET":
+				+ considerar:
+					* Generar tabla "Desarrollos NET":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos NET":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos NET" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos NET" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos NET" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos NET"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets Sharepoint":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets Sharepoint" - Fecha actual.
+			_nombre: "Desarrollos Sharepoint":
+				+ considerar:
+					* Generar tabla "Desarrollos Sharepoint":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos Sharepoint":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos Sharepoint" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos Sharepoint" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos Sharepoint" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos Sharepoint"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets CRM":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets CRM" - Fecha actual.
+			_nombre: "Desarrollos CRM":
+				+ considerar:
+					* Generar tabla "Desarrollos CRM":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos CRM":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos CRM" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos CRM" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos CRM" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos CRM"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets ISU- B&I":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets ISU- B&I" - Fecha actual.
+			_nombre: "Desarrollos ISU- B&I":
+				+ considerar:
+					* Generar tabla "Desarrollos ISU- B&I":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos ISU- B&I":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos ISU- B&I" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos ISU- B&I" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos ISU- B&I" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos ISU- B&I"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets FICA":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets FICA" - Fecha actual.
+			_nombre: "Desarrollos FICA":
+				+ considerar:
+					* Generar tabla "Desarrollos FICA":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos FICA":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos FICA" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos FICA" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos FICA" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos FICA"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets PM":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets PM" - Fecha actual.
+			_nombre: "Desarrollos PM":
+				+ considerar:
+					* Generar tabla "Desarrollos PM":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos PM":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos PM" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos PM" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos PM" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos PM"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "Tickets PS":
+				+ considerar: 
+					* Generar tabla:
+						- con nombre cabecera:
+							- "Estado":
+								- Listado datos tomado por la información del excel.
+							- "Sociedad":
+								- Listado datos tomado por la información del excel.
+							- "Número":
+								- Listado datos tomado por la información del excel.
+							- "Resumen":
+								- Listado datos tomado por la información del excel.
+							- "Fecha de apertura":
+								- Listado datos tomado por la información del excel.
+							- "Usuario MTGS/GS00":
+								- Listado datos tomado por la información del excel.
+							- "Días Tranc":
+								- Valor debe considerar "Fecha de apertura de la tabla "Tickets PS" - Fecha actual.
+			_nombre: "Desarrollos PS":
+				+ considerar:
+					* Generar tabla "Desarrollos PS":
+						- con nombre cabecera:
+							- "Status":
+								- Listado datos tomado por la información del excel.
+							- "Creado":
+								- Listado datos tomado por la información del excel.
+							- "Código":
+								- Listado datos tomado por la información del excel.
+							- "Tipo Requerimiento:"
+								- Listado datos tomado por la información del excel.
+							- "Titulo":
+								- Listado datos tomado por la información del excel.
+							- "Fecha plan entrega QA"
+								- Listado datos tomado por la información del excel.
+							- "Fecha entrega a QA"
+								- Listado datos tomado por la información del excel.
+							- "Solicitante"
+								- Listado datos tomado por la información del excel.
+					* Generar tabla "Resumen Desarrollos PS":
+						- con nombre cabecera:
+							- Estado:
+								- "Ingresado"
+								- "En validación de evaluación"
+								- "Bloqueado"
+								- "Total general"
+							- Cant:
+								- Contabilizar desde la tabla "Desarrollos PS" cantidad con status "Ingresado"
+								- Contabilizar desde la tabla "Desarrollos PS" cantidad con status "En validación de evaluación"
+								- Contabilizar desde la tabla "Desarrollos PS" cantidad con status "Bloqueado"
+								- Contabilizar la totalidad de Cant.
+					* Generar gráfico:
+						- con los valores presentes en porcentaje de la tabla "Resumen Desarrollos PS"
+					* Generar infográfico:
+						- con los colores presentes y su respectivo Status.
+			_nombre: "metrogas logo"

@@ -1,0 +1,118 @@
+REGISTRO DE DECISIONES Y PENDIENTES - Generación PPT
+Última actualización: 29-07-2026
+Fuente de verdad del proyecto: ESPECIFICACION.md (unifica contexto.txt + requerimientoPPT.txt)
+Base de archivos: /PPT/modelo-archivos/ (datos, pdf-modelo, imagenes)
+
+============================================================
+DECISIONES RESUELTAS
+============================================================
+
+[Finanzas - mapeo módulos]
+  - FI (deck Corporativo)   -> Tickets: grupo "Fico - Metrogas" | Desarrollos: frente "SAP FI"
+  - R&P (deck Corporativo)  -> Tickets: grupo "R&P - Metrogas"  | Desarrollos: sin frente (tabla vacía)
+  - FICA (deck Comercial)   -> Tickets: grupo "Fica - Metrogas" | Desarrollos: frente "SAP FICA"
+  - Los decks están separados, no hay doble conteo.
+
+[Fuente de datos]
+  - Datos semanales -> /PPT/Ejecuciones/<dd-mm-yyyy>/datos/  (se suben cada semana)
+        Tickets     = archivo con hoja "Page 1"      (agrupa por "Grupo Asignado")
+        Desarrollos = archivo con hoja "Desarrollos" (agrupa por "Frente")
+  - NO se consolida en un solo archivo. La especificación apunta a ambos.
+  - Recursos estáticos (pdf-modelo, imagenes) en /PPT/modelo-archivos/.
+
+[Volumetría]
+  - Se mantiene la comparación Reunión Anterior / Reunión Actual / Diferencia.
+  - Reunión Actual   = conteo desde task (4).xlsx
+  - Reunión Anterior = se lee del logs.txt de la ejecución anterior
+  - Diferencia       = Actual - Anterior
+  - Primera ejecución: valores de la reunión anterior se ingresan a mano (aún no hay log previo).
+
+[Estructura de Ejecuciones / Logs]  (confirmado)
+  - Carpeta raíz: /PPT/Ejecuciones/
+  - Por cada ejecución (semana): /PPT/Ejecuciones/<dd-mm-yyyy>/
+        ├── datos/     -> SE SUBE semanalmente: tickets + desarrollos de esa semana
+        └── logs.txt   -> registro-resumen de la ejecución
+  - Los recursos estáticos (pdf-modelo, imagenes) siguen en /PPT/modelo-archivos/.
+
+[Carpeta /test]  (confirmado)
+  - Las corridas de PRUEBA van en /PPT/test/<dd-mm-yyyy>/ (misma estructura que una ejecución).
+  - NO se consideran en el flujo real: la "reunión anterior" se lee SOLO de /Ejecuciones/.
+  - La ejecución del 29-07-2026 (primera prueba) se movió a /PPT/test/29-07-2026/.
+  - El logs.txt es un RESUMEN de seguimiento de la ejecución y contiene, como mínimo:
+      1. Cabecera: ID ejecución, fecha/hora, responsable, tipo, estado.
+      2. Fuentes de datos: archivos usados, fecha del dato, n° de registros.
+      3. Parámetros aplicados: filtros de estado, tipo de tarea, empresa, agrupación, match.
+      4. Volumetría Tickets por módulo y por deck (Anterior / Actual / Diferencia) + totales.
+      5. Resumen Desarrollos por módulo (conteo por Status) + totales.
+      6. Observaciones de la ejecución (módulos vacíos, provisionales, alertas de datos).
+      7. Entregables generados (nombres de los .pptx).
+  - Los valores "Actual" de esta ejecución son los "Anterior" de la siguiente.
+  - EJEMPLO ya generado: /PPT/Ejecuciones/29-07-2026/logs.txt
+
+[Filtro de estado en Tickets]  (confirmado 29-07)
+  - Se EXCLUYEN los tickets con estado "Cerrado" y "Cancelado".
+  - Pendiente menor: confirmar si además se excluyen "Resuelto" y "Terminado".
+
+[Mapeo cruzado B&I / BW]  (confirmado tal cual el prompt)
+  - B&I (Comercial):  Tickets grupo "B&I - Metrogas"     + Desarrollos frente "SAP ISU"
+  - BW  (Corporativo): Tickets grupo "Bw-Hana - Metrogas" + Desarrollos frente "BI"
+
+[Módulos sin Desarrollos]  (confirmado)
+  - SSFF, R&P (Corporativo) y Sharepoint (Comercial) no tienen frente en el Excel.
+  - Sus slides de Desarrollos se muestran SOLO con la fila de cabecera (sin datos).
+
+[Tipo de tarea en Tickets]  (PROVISIONAL - reconfirmar mañana)
+  - Se incluyen AMBOS tipos: "Incidente" (INC) + "Elemento solicitado" (RITM).
+
+[Filtro por Empresa]  (confirmado)
+  - Se incluyen TODAS las sociedades (Metrogas SA, Gas Sur, Innergy).
+  - Solo se filtra por "Grupo Asignado".
+
+[Columnas tabla Tickets]  (confirmado - manda requerimientoPPT.txt viejo)
+  - Estado             <- Estado (C)
+  - Sociedad           <- Empresa (B)
+  - Número             <- Número (A)
+  - Resumen            <- Resumen (D)
+  - Fecha de apertura  <- Creado (G)
+  - Usuario MTGS/GS00  <- Abierto por (E)
+  - Días Tranc         = Fecha actual - Creado  (en días, valor positivo)
+  - Ordenar por: Estado, luego Fecha de creación descendente.
+  Nota: contexto.txt pedía columnas distintas (Empresa/Abierto por, sin Días Tranc);
+        se descarta en favor de esta definición.
+
+[Alineación de valores de filtro]  (confirmado)
+  - El filtro NO exige coincidencia 100% exacta: se normaliza para tolerar pequeñas
+    variaciones de mayúsculas/minúsculas, espacios y guiones, e ignora el sufijo
+    " - Metrogas" y el prefijo "SAP ".
+  - SALVAGUARDA: la normalización NO debe confundir tokens distintos.
+    En especial "Fico" ≠ "Fica" (módulos diferentes). El token del módulo se compara íntegro.
+  - Equivalencias que se resuelven con esta regla:
+       Tickets:     "SSFF"                -> "Ssff - Metrogas"
+                    "BW- HANA - Metrogas" -> "Bw-Hana - Metrogas"
+                    "FICO - Metrogas"     -> "Fico - Metrogas"
+       Desarrollos: frente "SAP BI"       -> "BI"
+
+[Correcciones de redacción en contexto.txt]  (aplicadas)
+  - Agenda Pres 2: "Torre Comercial y Técnica" -> "Torre Corporativa".
+  - Nombres unificados: "BW- HANA - Metrogas" -> "Bw-Hana - Metrogas";
+    "FICO - Metrogas"/"Fi - Metrogas" -> "Fico - Metrogas"; frente "SAP BI" -> "BI".
+  - Renumerada la diapositiva de Desarrollos MM (Pres 2): "15" -> "17".
+
+============================================================
+PENDIENTES POR RESOLVER
+============================================================
+
+  1. [Menor] ¿Excluir también "Resuelto" y "Terminado" en Tickets? (hoy se excluyen Cerrado+Cancelado)
+     y confirmar Tipo de tarea (¿ambos INC+RITM, o solo Incidente?).
+  1b. Estilo alineado al PDF modelo (título en recuadro, 1ª col navy, zebra, barra inferior) -> HECHO.
+  1c. Gráfico de dona (% por Status) + leyenda de colores en slides de Desarrollos -> HECHO.
+  1d. Resumen por Status: ahora lista TODOS los estados presentes + Total general (la suma cuadra) -> HECHO.
+  1e. Fix overflow: el cuadro Resumen se ancla por abajo y ya no se sale de la slide -> HECHO.
+      Cómo ejecutar el proceso (test vs real): ver proceso/README.md.
+  9. Assets/estilo:
+       RESUELTO - Logos e imagen en /PPT/modelo-archivos/imagenes/:
+                  LOGO_metrogas.png, LOGO_nttdata_azul.png, LOGO_nttdata_blanco.png, IMG_corporativa.png
+       RESUELTO - Paleta confirmada: verde #A2AD00, azul #284973 y #002060 (cabecera tablas).
+       PENDIENTE - No hay .pptx modelo (solo PDF): el layout exacto se aproxima desde el PDF.
+       PENDIENTE - Tipografías FS EMERIC y APTOS NARROW: confirmar si están instaladas;
+                   si no, usar reemplazo (ej. Aptos/Calibri) y dejarlo anotado.

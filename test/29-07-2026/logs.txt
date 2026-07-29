@@ -1,0 +1,93 @@
+====================================================================
+LOG DE EJECUCIÓN - Generación PPT Seguimiento Operativo
+====================================================================
+ID ejecución......: TEST-2026-07-29-001
+Fecha/hora........: 29-07-2026 00:45
+Responsable.......: Gastón
+Tipo ejecución....: TEST / PRUEBA  (NO usar como "reunión anterior" del flujo real)
+Ubicación.........: /PPT/test/29-07-2026/  (fuera de /Ejecuciones a propósito)
+Estado............: OK
+
+--------------------------------------------------------------------
+1. FUENTES DE DATOS
+--------------------------------------------------------------------
+Tickets.......: Ejecuciones/29-07-2026/datos/task (4).xlsx     (hoja "Page 1")      | 840 registros
+Desarrollos...: Ejecuciones/29-07-2026/datos/SHP01072026.xlsx  (hoja "Desarrollos") | 62 registros
+Fecha del dato: 01-07-2026 (SHP) / export ServiceNow 24-07-2026 (tickets)
+
+--------------------------------------------------------------------
+2. PARÁMETROS APLICADOS (según decisiones_y_pendientes.txt)
+--------------------------------------------------------------------
+Tickets  - Estado......: EXCLUYE "Cerrado" y "Cancelado"   [confirmado 29-07]
+Tickets  - Tipo tarea..: INCLUYE INC + RITM       [PROVISIONAL, reconfirmar]
+Tickets  - Empresa.....: TODAS las sociedades
+Tickets  - Agrupación..: columna "Grupo Asignado"
+Desar.   - Agrupación..: columna "Frente"
+Match....: tolerante (mayús/minús, espacios, guiones, sufijo "- Metrogas", prefijo "SAP")
+           Salvaguarda: "Fico" != "Fica".
+
+--------------------------------------------------------------------
+3. VOLUMETRÍA TICKETS  (Anterior / Actual / Diferencia)
+--------------------------------------------------------------------
+[ TORRE COMERCIAL Y TÉCNICA ]
+  Módulo         Anterior   Actual   Dif
+  NET               N/A        6      N/A
+  Sharepoint        N/A        3      N/A
+  B&I               N/A       11      N/A
+  FICA              N/A        4      N/A
+  CRM               N/A        2      N/A
+  PM                N/A        3      N/A
+  PS                N/A        1      N/A
+  --------------------------------------------
+  TOTAL             N/A       30      N/A
+
+[ TORRE CORPORATIVA ]
+  Módulo         Anterior   Actual   Dif
+  HCM               N/A        1      N/A
+  SSFF              N/A        0      N/A
+  R&P               N/A       14      N/A
+  SD                N/A        4      N/A
+  BW (Bw-Hana)      N/A        5      N/A
+  FICO              N/A        2      N/A
+  MM                N/A        6      N/A
+  --------------------------------------------
+  TOTAL             N/A       32      N/A
+
+Nota: "Anterior" = N/A por ser la primera ejecución (no hay log previo).
+      Desde la próxima, "Anterior" se toma del logs.txt de la fecha anterior.
+
+--------------------------------------------------------------------
+4. RESUMEN DESARROLLOS (conteo por Status, por módulo)
+--------------------------------------------------------------------
+[ TORRE COMERCIAL Y TÉCNICA ]
+  NET........: Ingresado 1, En validación 1                          | total 2
+  Sharepoint.: (sin frente en Excel -> tabla vacía)                  | total 0
+  B&I........: Entregado a Qas 3, En ajustes 1, Enviado a eval. 1    | total 5
+  FICA.......: Ingresado 8, Bloqueado 3, Entregado a Qas 1           | total 12
+  CRM........: Entregado a Qas 1                                     | total 1
+  PM.........: En ejecución 2, En PRD 2, En validación 1, Entreg. 1 | total 6
+  PS.........: 1 en c/u (Ejec., Planif., PRD, Entreg., Ingresado)    | total 5
+
+[ TORRE CORPORATIVA ]
+  HCM........: En PRD 4, Bloqueado 1, Entregado 1, Ingresado 1       | total 7
+  SSFF.......: (sin frente en Excel -> tabla vacía)                  | total 0
+  R&P........: (sin frente en Excel -> tabla vacía)                  | total 0
+  SD.........: Entregado a Qas 2                                     | total 2
+  BW.........: Ingresado 2                                           | total 2
+  FICO.......: Ingresado 3, En ejec. 3, En PRD 3, Entreg. 3, Env. 1  | total 13
+  MM.........: Ingresado 2, Entregado 2, Bloqueado 1                 | total 5
+
+--------------------------------------------------------------------
+5. OBSERVACIONES DE LA EJECUCIÓN
+--------------------------------------------------------------------
+- Sharepoint, SSFF y R&P sin desarrollos: se generan tablas solo con cabecera.
+- Filtros de Estado y Tipo de tarea marcados como PROVISIONALES (ver pendientes).
+- Fuentes con fechas distintas (tickets 24-07 vs desarrollos 01-07): validar
+  que ambos correspondan a la misma reunión.
+
+--------------------------------------------------------------------
+6. ENTREGABLES GENERADOS
+--------------------------------------------------------------------
+- Seguimiento Semanal Torre Comercial y Técnico.pptx   [GENERADO 29-07-2026 · 20 slides]
+- Seguimiento Semanal Torre Corporativa.pptx           [GENERADO 29-07-2026 · 20 slides]
+====================================================================

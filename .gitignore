@@ -1,0 +1,35 @@
+# ---- Dependencias (se reinstalan con: npm install pptxgenjs) ----
+node_modules/
+package.json
+package-lock.json
+
+# ---- Datos intermedios generados por el proceso ----
+# _data.json lo regenera proceso/extraer_datos.py en cada corrida
+proceso/_data.json
+
+# ---- Scratch de QA / previsualización ----
+_qa/
+*.pdf.tmp
+slide-*.jpg
+corp-*.jpg
+com-*.jpg
+
+# ---- Temporales de Office / LibreOffice ----
+~$*
+.~lock.*#
+*.tmp
+
+# ---- Archivos del sistema operativo ----
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- (OPCIONAL) Salidas generadas ----
+# Las .pptx se regeneran con el proceso a partir de /datos.
+# Descomenta la línea siguiente si NO quieres versionar los .pptx (son binarios grandes):
+# **/*.pptx
